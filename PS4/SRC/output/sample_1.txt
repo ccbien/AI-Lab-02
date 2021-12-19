@@ -3,8 +3,8 @@ B
 -A
 -C
 4
-{}
-A OR -B
--B OR C
 A OR C
+A OR -B
+{}
+-B OR C
 YES
