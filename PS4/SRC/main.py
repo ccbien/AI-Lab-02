@@ -1,9 +1,9 @@
 import os
 from clause import Clause
 
-INPUT_DIR = './input'
-OUTPUT_DIR = './output'
-DETAIL_DIR = './detail' # Ghi chi tiet tung buoc de them vao report
+INPUT_DIR = './test/input'
+OUTPUT_DIR = './test/output'
+DETAIL_DIR = './test/detail' # Ghi chi tiet tung buoc de them vao report
 INPUT_PREFIX = 'input'
 OUTPUT_PREFIX = 'output'
 

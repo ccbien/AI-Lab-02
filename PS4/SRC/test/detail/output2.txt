@@ -1,0 +1,196 @@
+--------------------
+Clauses:
+	-A OR B OR C
+	A OR B OR -C OR -D
+	-A
+	-C OR D
+	-A OR -B OR -C OR -D
+	-C
+	A OR -B
+	A OR B
+	-A OR -B OR C
+Resolutions:
+	-A OR B OR C
+	-C OR D
+	-A OR B OR D
+
+	-A OR B OR C
+	-C
+	-A OR B
+
+	-A OR B OR C
+	A OR B
+	B OR C
+
+	-A OR B OR C
+	-A OR -B OR C
+	-A OR C
+
+	A OR B OR -C OR -D
+	-A
+	B OR -C OR -D
+
+	A OR B OR -C OR -D
+	-C OR D
+	A OR B OR -C
+
+	A OR B OR -C OR -D
+	A OR -B
+	A OR -C OR -D
+
+	-A
+	A OR -B
+	-B
+
+	-A
+	A OR B
+	B
+
+	-C OR D
+	-A OR -B OR -C OR -D
+	-A OR -B OR -C
+
+	-C OR D
+	-A OR -B OR C
+	-A OR -B OR D
+
+	-A OR -B OR -C OR -D
+	A OR -B
+	-B OR -C OR -D
+
+	-A OR -B OR -C OR -D
+	-A OR -B OR C
+	-A OR -B OR -D
+
+	-C
+	-A OR -B OR C
+	-A OR -B
+
+	A OR -B
+	A OR B
+	A
+
+	A OR -B
+	-A OR -B OR C
+	-B OR C
+
+--------------------
+Clauses:
+	-A OR B OR C
+	-A OR -B OR -D
+	B OR -C OR -D
+	-A OR C
+	A OR B OR -C OR -D
+	B OR C
+	-C OR D
+	-A OR -B OR -C OR -D
+	-C
+	-A OR -B
+	A OR B OR -C
+	A OR -C OR -D
+	-A OR B
+	A
+	-B OR -C OR -D
+	B
+	A OR B
+	-B
+	-A OR -B OR D
+	-A
+	-A OR -B OR -C
+	-A OR B OR D
+	A OR -B
+	-B OR C
+	-A OR -B OR C
+Resolutions:
+	-A OR B OR C
+	-A OR -B OR -D
+	-A OR C OR -D
+
+	-A OR B OR C
+	B OR -C OR -D
+	-A OR B OR -D
+
+	-A OR B OR C
+	-A OR -B OR D
+	-A OR C OR D
+
+	-A OR -B OR -D
+	B OR -C OR -D
+	-A OR -C OR -D
+
+	-A OR -B OR -D
+	-A OR B
+	-A OR -D
+
+	-A OR -B OR -D
+	A
+	-B OR -D
+
+	B OR -C OR -D
+	B OR C
+	B OR -D
+
+	B OR -C OR -D
+	-C OR D
+	B OR -C
+
+	B OR -C OR -D
+	-B OR -C OR -D
+	-C OR -D
+
+	B OR -C OR -D
+	-A OR B OR D
+	-A OR B OR -C
+
+	-A OR C
+	-C OR D
+	-A OR D
+
+	-A OR C
+	A
+	C
+
+	A OR B OR -C OR -D
+	B OR C
+	A OR B OR -D
+
+	B OR C
+	-C OR D
+	B OR D
+
+	B OR C
+	A OR -B
+	A OR C
+
+	-C OR D
+	A OR -C OR -D
+	A OR -C
+
+	-C OR D
+	-B OR -C OR -D
+	-B OR -C
+
+	-C OR D
+	-B OR C
+	-B OR D
+
+	A OR B OR -C
+	-A OR B OR D
+	B OR -C OR D
+
+	A OR -C OR -D
+	-B OR C
+	A OR -B OR -D
+
+	-A OR B
+	-A OR -B OR -C
+	-A OR -C
+
+	A
+	-A
+	{}
+
+	-A OR -B OR -C
+	-A OR B OR D
+	-A OR -C OR D
+
