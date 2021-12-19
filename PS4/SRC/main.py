@@ -25,17 +25,17 @@ def PL_Resolution(clauses, filename):
 
     while True:
         clauses = list(clause_set)
-        lines = [] # Cac clause ghi vao output
+        lines = set() # Cac clause ghi vao output
 
         for i in range(len(clauses)):
             for j in range(i + 1, len(clauses)):
                 resolvent = Clause.resolve(clauses[i], clauses[j]) # Hop giai
-                if resolvent is None:
+                if resolvent is None or resolvent in new_set or resolvent in clauses:
                     continue
                 if resolvent.is_empty():
                     flag = True
                 new_set.add(resolvent)
-                lines.append(resolvent.to_string())
+                lines.add(resolvent.to_string())
 
         f.write(str(len(lines)) + '\n')
         for line in lines:

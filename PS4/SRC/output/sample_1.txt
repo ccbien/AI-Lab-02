@@ -1,14 +1,10 @@
 3
--A
 B
+-A
 -C
-8
--A
-B
-A OR C
+4
 {}
--C
--B OR C
 A OR -B
-{}
+-B OR C
+A OR C
 YES
