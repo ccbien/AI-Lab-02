@@ -5,7 +5,7 @@ INPUT_DIR = './input'
 OUTPUT_DIR = './output'
 DETAIL_DIR = './detail' # Ghi chi tiet tung buoc de them vao report
 INPUT_PREFIX = 'input'
-OUTPUT_FREFIX = 'output'
+OUTPUT_PREFIX = 'output'
 
 
 def read_input(filepath):
@@ -13,8 +13,9 @@ def read_input(filepath):
         lines = f.readlines() # Doc file
 
     alpha = Clause(lines[0]) # Tao clause alpha tu dong dau tien
+    n = int(lines[1])
     clauses = [] # Cac clause trong KB
-    for line in lines[2:]: # Tao clause tu cac dong 3 tro di
+    for line in lines[2:2+n]: # Tao clause tu cac dong 3 tro di
         clauses.append(Clause(line))
 
     return alpha, clauses
@@ -83,7 +84,7 @@ def main():
         not_alpha = Clause.NOT(alpha)
         clauses.extend(not_alpha) # Them cac clause trong not_alpha vao danh sach
 
-        PL_Resolution(clauses, filename.replace(INPUT_PREFIX, OUTPUT_FREFIX))
+        PL_Resolution(clauses, filename.replace(INPUT_PREFIX, OUTPUT_PREFIX))
 
 
 if __name__ == '__main__':
