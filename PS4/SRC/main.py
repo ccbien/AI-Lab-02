@@ -76,15 +76,14 @@ def PL_Resolution(clauses, filename):
 
 def main():
     for filename in os.listdir(INPUT_DIR):
-        if filename.startswith(INPUT_PREFIX):
-            alpha, clauses = read_input(os.path.join(INPUT_DIR, filename))
+        alpha, clauses = read_input(os.path.join(INPUT_DIR, filename))
 
-            # not_alpha la mot list chua cac clause cua NOT(alpha)
-            # VD: alpha = "A OR -B"  -->  NOT(alpha) = "-A AND B"  -->  ["-A", "B"]
-            not_alpha = Clause.NOT(alpha)
-            clauses.extend(not_alpha) # Them cac clause trong not_alpha vao danh sach
+        # not_alpha la mot list chua cac clause cua NOT(alpha)
+        # VD: alpha = "A OR -B"  -->  NOT(alpha) = "-A AND B"  -->  ["-A", "B"]
+        not_alpha = Clause.NOT(alpha)
+        clauses.extend(not_alpha) # Them cac clause trong not_alpha vao danh sach
 
-            PL_Resolution(clauses, filename.replace(INPUT_PREFIX, OUTPUT_FREFIX))
+        PL_Resolution(clauses, filename.replace(INPUT_PREFIX, OUTPUT_FREFIX))
 
 
 if __name__ == '__main__':
