@@ -71,8 +71,10 @@ class Clause:
                     return None
                 flag = True
                 kwargs[ch] = 0
-            else:
+            elif clause_1.literal[ch] != clause_2.literal[ch]: # co mot value 0
                 kwargs[ch] = clause_1.literal[ch] + clause_2.literal[ch]
+            else: # cap value bang nhau
+                kwargs[ch] = clause_1.literal[ch]
         if not flag:
             return None
         # Tra ve clause ket qua
